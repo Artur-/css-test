@@ -122,7 +122,10 @@ module.exports = {
       }] : []),
       {
         test: /\.css$/i,
-        use: ['raw-loader']
+        use: ['css-loader']
+      },{
+        test: /\.jpg$/i,
+        use: ['file-loader']
       }
     ]
   },
